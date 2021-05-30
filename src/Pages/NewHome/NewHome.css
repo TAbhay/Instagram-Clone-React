@@ -1,0 +1,14 @@
+.feed-container{
+    background-color: transparent;
+    width:50%;
+    min-height: calc(100vh - 56px);
+    margin-left: 10%;
+    margin-top:5px;
+}
+
+@media only screen and (max-width:950px){
+    .feed-container{
+        width:100%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,42 @@
+.navbar{
+    height:3.5rem;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar-nav{
+    width:50%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-logo{
+    height:1.5rem;
+    width:1.5rem;
+    padding:0.5rem;
+    margin-left:3rem;
+    background-color:transparent;
+
+}
+.nav-item{
+    padding:1rem;
+    display:block;
+
+}
+#nav-button{
+    width:140px;
+    margin-right: 20px;
+    margin:5px;
+}
+
