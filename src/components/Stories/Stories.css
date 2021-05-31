@@ -1,0 +1,76 @@
+
+.stories-container{
+    height:100px;
+    border : 1px solid rgba(134, 129, 129, 0.685);
+    border-radius:5px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction:row;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    align-items:center;
+    justify-content:space-evenly;
+    scroll-behavior: smooth;
+    transition:2s ease-in;
+}
+
+.stories-container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+.stories-items{
+    
+    width:80px;
+    height:70px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    padding:0.5rem;
+    
+}
+ /* not adding svg animation for border now */
+.stories-items > img {   
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    border: 3px solid rgb(206, 9, 117);
+    box-sizing: border-box;
+    
+    
+}
+.stories-items-text{
+    display:block;
+    font-size:12px;
+}
+.sbttn{
+   
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    z-index: 5;
+    background-color:white;
+    z-index: 5;
+    position: absolute;
+   
+}
+.sbttn svg path {
+    color:grey;
+    
+}
+ .iconify[data-icon='cil-arrow-circle-right'] {
+    color:grey;
+ }
+.b1{
+   left:20%;
+}
+.b2{
+   left:63%;
+}
+@media only screen and (max-width:950px){
+    .b1{
+        left:5%;
+     }
+     .b2{
+        left:93%;
+     }
+}

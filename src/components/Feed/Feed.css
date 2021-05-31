@@ -1,11 +1,11 @@
 .card {
-    width: 100%;
     min-height: 50vh;
     background-color: transparent;
     margin: 0;
     padding: 0px;
     border : 1px solid rgba(134, 129, 129, 0.685);
     border-radius:5px;
+    margin-bottom:10px;
 }
 .card-title{
     padding:5px;

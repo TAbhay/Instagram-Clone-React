@@ -15,14 +15,18 @@ const Home = (props) => {
         <div >
          <Header isLoggedIn={getValue}/>
          <Switch>
-             <Route exact path="/" render = {(props) => ( 
-             <NewHome 
-             {...props}
-             isLoggedIn = {props.isLoggedIn}
-             /> 
-             )}  
-             />
-             <Route  exact path="/explore" component = {Explore} />
+             <Route 
+              exact
+               path="/" 
+                render = {(props) => ( 
+                 <NewHome 
+                   {...props}
+                   isLoggedIn = {props.isLoggedIn}
+                 /> 
+                )}  
+              />
+             <Route exact path="/explore" component = {Explore} />
+             
          </Switch>
         </div>
            

@@ -13,6 +13,7 @@ const Header = (props) => {
                <NavLink to ="/explore"> <li className="nav-item"> <span className="iconify" data-icon="carbon:explore" data-inline="false" style={{color: 'white'}} data-width={30} data-height={30} /> </li>  </NavLink>
              
             </ul>
+            
             <button  id="nav-button" onClick={() => props.isLoggedIn(false)} >Log Out</button>
         </nav>
     );

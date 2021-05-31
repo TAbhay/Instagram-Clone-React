@@ -1,13 +1,14 @@
-import React , {usestate} from 'react';
-
+import React  from 'react';
 import './Feed.css';
 const Feed = (props) =>  {
-     
+    const feed = props.feed;
+    const {id,author,download_url} = feed;
+    console.log(feed.url);
     return(
    
         <div className="card">
-        <div className="card-title" ><img src="https://source.unsplash.com/daily" alt="profile" /><span className="card-title-text">Title</span></div>
-        <img className="card-img" src="https://source.unsplash.com/daily" alt="post" />
+        <div className="card-title" ><img src="https://source.unsplash.com/1600x900/?person" alt="profile" /><span className="card-title-text">{author}</span></div>
+        <img className="card-img" src={download_url} alt="post" />
         <div className="card-body">
           <div className="card-section">
             <div className="card-section-logo" > <span className="iconify" data-icon="akar-icons:heart" data-inline="false" style={{color: 'black'}} data-width={30} data-height={30} /></div>
